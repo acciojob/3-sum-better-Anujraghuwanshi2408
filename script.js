@@ -1,7 +1,7 @@
 function threeSum(arr, target) {
 // write your code here
 
-	Array.sort((a , b)=>a-b);
+	arr.sort((a , b)=>a-b);
 
 	let n = arr.length;
 	let closestSum = Infinity;
@@ -20,11 +20,11 @@ function threeSum(arr, target) {
 				left++;
 			}
 			else{
-				right++;
+				right--;
 			}
 		}
-		return closestSum;
 	}
+		return closestSum;
   
 }
 
